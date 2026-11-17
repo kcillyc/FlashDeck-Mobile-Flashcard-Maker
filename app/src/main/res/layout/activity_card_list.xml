@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#FAF8FC">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="76dp" android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="20dp" android:background="@color/purple_500">
+        <TextView android:id="@+id/backButton" android:layout_width="48dp" android:layout_height="56dp" android:gravity="center" android:text="‹" android:textColor="@color/white" android:textSize="38sp" />
+        <TextView android:id="@+id/toolbarTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/white" android:textSize="22sp" android:textStyle="bold" />
+    </LinearLayout>
+    <Button android:id="@+id/addCardButton" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginStart="20dp" android:layout_marginTop="16dp" android:layout_marginEnd="20dp" android:background="@drawable/button_gold" android:text="+  Add flashcard" android:textAllCaps="false" android:textColor="@color/white" android:textSize="15sp" />
+    <TextView android:id="@+id/viewFlashcardButton" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_marginEnd="20dp" android:background="#FFFFFF" android:clickable="true" android:focusable="true" android:gravity="center" android:text="View flashcard layout" android:textColor="#5B3794" android:textSize="14sp" />
+    <Button android:id="@+id/deleteSelectedButton" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_marginEnd="20dp" android:background="@drawable/button_delete_red" android:text="Delete selected" android:textAllCaps="false" android:textColor="@color/white" android:visibility="gone" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_marginEnd="20dp" android:text="Long-press a row to select cards for deletion" android:textColor="#777777" android:textSize="13sp" />
+    <Spinner android:id="@+id/tableFilterSpinner" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginStart="20dp" android:layout_marginTop="8dp" android:layout_marginEnd="20dp" android:background="@drawable/button_status_white" android:clipToOutline="true" android:elevation="2dp" android:spinnerMode="dropdown" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/cardListContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" />
+    </ScrollView>
+</LinearLayout>

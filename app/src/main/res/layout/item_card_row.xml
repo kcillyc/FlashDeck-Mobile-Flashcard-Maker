@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp" android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp" android:background="@drawable/flashcard_surface">
+    <TextView android:id="@+id/statusDot" android:layout_width="20dp" android:layout_height="wrap_content" android:gravity="center" android:text="●" android:textColor="#BDBDBD" android:textSize="14sp" />
+    <TextView android:id="@+id/termText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="#2D2639" android:textSize="15sp" android:textStyle="bold" />
+    <TextView android:id="@+id/answerText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:textColor="#555555" android:textSize="15sp" />
+</LinearLayout>
